@@ -140,8 +140,14 @@ p.credit a {
     border: 1px solid rgba(70, 70, 255, 0.642);
 }
 
-.form-item input:invalid {
+input.error {
     border: 2px solid red;
+}
+
+.error-text {
+    margin-top: 5px;
+    font-size: .8rem;
+    color: red;
 }
 
 /* CTA */
