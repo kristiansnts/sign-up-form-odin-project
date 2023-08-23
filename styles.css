@@ -1,0 +1,71 @@
+/* FONT */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-family: 'Norse', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Base Style */
+.container {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.col-4 {
+    width: 30%;
+    height: 100vh;
+}
+
+.col-8 {
+    width: 70%;
+}
+
+.bg {
+    background: url(/img/andrea-de-santis-QaVlY5L7MJ8-unsplash.jpg) no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+
+/* Component */
+.title {
+    margin-top: 30%;
+    display: flex;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    padding: 20px 0;
+    font-size: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img {
+    width: 15%;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    margin-bottom: 20px;
+}
+
+p.credit {
+    text-align: center;
+    color: white;
+}
