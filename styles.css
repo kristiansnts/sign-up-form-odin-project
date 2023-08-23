@@ -19,10 +19,6 @@ a {
 }
 
 /* Base Style */
-.container {
-    width: 100%;
-}
-
 .row {
     display: flex;
 }
@@ -37,14 +33,43 @@ a {
 }
 
 .bg {
-    background: url(/img/andrea-de-santis-QaVlY5L7MJ8-unsplash.jpg) no-repeat ;
+    background: url(/img/federico-bottos-Z3NceSeZqgI-unsplash.jpg) no-repeat ;
     background-size: cover;
     position: relative;
 }
 
+.col-8 {
+    background-color: #ebeaea;
+}
+
+.header {
+    margin: 4rem 6rem;
+}
+
+.cta {
+    margin: 30px 6rem;
+}
+
 /* Component */
+.credit {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    margin-bottom: 20px;
+}
+
+p.credit {
+    text-align: center;
+    color: white;
+}
+
+p.credit a {
+    color: white;
+    text-decoration: underline;
+}
+
 .title {
-    margin-top: 30%;
+    margin-top: 13%;
     display: flex;
     background-color: rgba(0,0,0,0.3);
     color: white;
@@ -58,14 +83,81 @@ a {
     width: 15%;
 }
 
-.credit {
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    margin-bottom: 20px;
+/* HEADER */
+
+.header .heading {
+    width: 900px;
+    font-size: 1.5rem;
 }
 
-p.credit {
-    text-align: center;
+.header p:last-child {
+    margin: 20px 0;
+}
+
+
+/* FORM */
+.form-group {
+    padding: 30px 6rem;
+    background-color: #fff;
+    box-shadow: 1px 6px 10px 0px rgba(0,0,0,0.51);
+}
+
+.form-group h2 {
+    font-size: 1.3rem;
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 700px;
+    margin: 20px 0;
+}
+
+.form-item {
+    margin: 0;
+    padding: 0;
+    flex: 1 1 250px;
+}
+
+.form-item label {
+    font-size: .9rem;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.form-item input {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+.form-item input:focus {
+    border: 1px solid rgba(70, 70, 255, 0.642);
+}
+
+.form-item input:invalid {
+    border: 2px solid red;
+}
+
+/* CTA */
+.btn {
+    background-color: #596D48;
     color: white;
+    box-shadow: 1px 6px 8px 0px rgba(0,0,0,0.51);
+    font-size: 1.1rem;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.cta p a {
+    font-weight: bold;
+    color: #596D48;
 }
